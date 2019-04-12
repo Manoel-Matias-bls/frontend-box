@@ -72,7 +72,7 @@ export default class Box extends Component {
                     utilizando apenas () ele já faz o return diretamente */}
                     {this.state.box.files && this.state.box.files.map(file => (
                         <li key={file._id}>
-                            <a className="fileInfo" href={file.url} target="_blank">
+                            <a className="fileInfo" href={file.url} target="_blank" rel="noopener noreferrer">
                                 <MdInsertDriveFile size={24} color="#A5Cfff" />
                                 <strong>{file.title}</strong>
                             </a>
